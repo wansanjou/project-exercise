@@ -1,0 +1,7 @@
+bcrypt:
+  saltRounds: 10
+
+jwt:
+  secretKey: testUserAPISecret
+  algorithm: HS256
+  expiresIn: 43200m
