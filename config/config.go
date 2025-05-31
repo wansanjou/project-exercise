@@ -57,7 +57,10 @@ func Get() Config {
 }
 
 func initViper() {
-	viper.AddConfigPath("..")
+	viper.AddConfigPath("./config") 
+	viper.AddConfigPath(".")       
+	viper.AddConfigPath("/app")   
+
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 
